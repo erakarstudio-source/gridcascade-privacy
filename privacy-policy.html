@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GridCascade Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f7fb;
+    --surface: #ffffff;
+    --surface-2: #eef1f9;
+    --text: #16213a;
+    --text-muted: #5b6b8c;
+    --border: #dfe4f0;
+    --accent: #6742d1;
+    --accent-ink: #ffffff;
+    --gold: #b5790f;
+    --link: #4a3ccf;
+    --shadow: 0 1px 2px rgba(22,33,58,0.04), 0 8px 24px rgba(22,33,58,0.06);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0B1220;
+      --surface: #111a2e;
+      --surface-2: #16213a;
+      --text: #eef1fa;
+      --text-muted: #92a2c4;
+      --border: rgba(148,178,255,0.18);
+      --accent: #b39dff;
+      --accent-ink: #1a1030;
+      --gold: #ffcf4d;
+      --link: #9fb4ff;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 32px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0B1220;
+    --surface: #111a2e;
+    --surface-2: #16213a;
+    --text: #eef1fa;
+    --text-muted: #92a2c4;
+    --border: rgba(148,178,255,0.18);
+    --accent: #b39dff;
+    --accent-ink: #1a1030;
+    --gold: #ffcf4d;
+    --link: #9fb4ff;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 32px rgba(0,0,0,0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  .masthead { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  .mark { width: 44px; height: 44px; flex: none; }
+  .brand {
+    font-family: 'Baloo 2', 'Public Sans', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+  }
+  .brand-sub { color: var(--text-muted); font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+
+  h1 {
+    font-family: 'Baloo 2', 'Public Sans', sans-serif;
+    font-weight: 800;
+    font-size: clamp(32px, 5vw, 44px);
+    line-height: 1.08;
+    margin: 28px 0 6px;
+    text-wrap: balance;
+  }
+  .meta { color: var(--text-muted); font-size: 14px; margin-bottom: 36px; }
+  .meta strong { color: var(--text); font-weight: 600; }
+
+  .tldr {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 24px;
+    box-shadow: var(--shadow);
+    margin-bottom: 40px;
+  }
+  .tldr h2 {
+    margin: 0 0 12px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: none;
+    padding: 0;
+  }
+  .tldr ul { margin: 0; padding-left: 20px; }
+  .tldr li { margin-bottom: 8px; }
+  .tldr li:last-child { margin-bottom: 0; }
+
+  nav.toc {
+    background: var(--surface-2);
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin-bottom: 44px;
+    font-size: 14px;
+  }
+  nav.toc h2 { margin: 0 0 10px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); border: none; padding: 0; }
+  nav.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 24px; }
+  nav.toc li { margin-bottom: 6px; break-inside: avoid; }
+
+  section { margin-bottom: 40px; scroll-margin-top: 24px; }
+  h2 {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    text-wrap: balance;
+  }
+  h3 { font-size: 16px; font-weight: 700; margin: 20px 0 8px; }
+  p { margin: 0 0 14px; max-width: 68ch; }
+  ul, ol { margin: 0 0 14px; padding-left: 22px; max-width: 68ch; }
+  li { margin-bottom: 6px; }
+  strong { font-weight: 700; }
+
+  .table-wrap { overflow-x: auto; margin: 18px 0; border: 1px solid var(--border); border-radius: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+  th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  thead th { background: var(--surface-2); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:nth-child(odd) { background: color-mix(in srgb, var(--surface-2) 40%, transparent); }
+
+  .badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--surface-2);
+    color: var(--gold);
+    border: 1px solid var(--border);
+  }
+
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 24px;
+    box-shadow: var(--shadow);
+  }
+  .contact-card code {
+    background: var(--surface-2);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+
+  @media (max-width: 520px) {
+    nav.toc ol { columns: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="masthead">
+    <svg class="mark" viewBox="0 0 100 100" role="img" aria-label="GridCascade">
+      <rect x="4" y="4" width="40" height="40" rx="9" fill="#ff4fa6"/>
+      <rect x="52" y="4" width="40" height="40" rx="9" fill="#ffb23e"/>
+      <rect x="4" y="52" width="40" height="40" rx="9" fill="#2fc6e8"/>
+      <rect x="52" y="52" width="40" height="40" rx="9" fill="#7c4dff"/>
+      <rect x="70" y="70" width="30" height="30" rx="8" fill="#23d68a" transform="rotate(6 85 85)"/>
+    </svg>
+    <div>
+      <div class="brand">GridCascade</div>
+      <div class="brand-sub">by erakarstudio</div>
+    </div>
+  </div>
+  <!-- ============================== ENGLISH ============================== -->
+  <section id="en">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: <strong>September 25, 2026</strong> &nbsp;·&nbsp; Applies to the <strong>GridCascade</strong> mobile app (package <code>com.erakarstudio.gridcascade</code>) on Google Play, developed by <strong>erakarstudio</strong></p>
+
+  <div class="tldr">
+    <h2>The short version</h2>
+    <ul>
+      <li>GridCascade has <strong>no account or sign-up</strong> — we never collect your name, email, or phone number.</li>
+      <li>Your gameplay data (score, coins, gems, settings, progress) is stored <strong>only on your device</strong> — it is never sent to us or to any server we operate.</li>
+      <li>The app shows ads through <strong>Google AdMob</strong> — banner ads, full-screen (interstitial) ads, and optional rewarded video ads — which can collect an advertising ID and device information as described below.</li>
+      <li>If you're in the <strong>EU or UK</strong>, a Google User Messaging Platform (UMP) consent form asks for your permission before any personalized ads are shown.</li>
+      <li><strong>Real-money purchases are not available yet.</strong> If we add them in the future, this policy will be updated first.</li>
+      <li>We never sell your data, and the app is not directed at children.</li>
+    </ul>
+  </div>
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#local">Data stored only on your device</a></li>
+      <li><a href="#ads">Advertising &amp; your choices</a></li>
+      <li><a href="#purchases">In-app purchases</a></li>
+      <li><a href="#third-party">Third-party services</a></li>
+      <li><a href="#sharing">Data sharing &amp; sale</a></li>
+      <li><a href="#retention">Data retention</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#rights">Your rights &amp; choices</a></li>
+      <li><a href="#security">Data security</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section id="intro">
+    <h2>1. Introduction</h2>
+    <p>GridCascade is a block-puzzle game developed by <strong>erakarstudio</strong> ("we", "us"). This policy explains what information the app collects when you play, why, and what choices you have.</p>
+  </section>
+
+  <section id="collect">
+    <h2>2. Information we collect</h2>
+    <h3>Information you provide</h3>
+    <p>None. GridCascade doesn't have an account system, a login, or a profile — there is nothing to sign up for, so we never ask for your name, email address, or any contact detail.</p>
+    <h3>Information collected automatically, via Google AdMob</h3>
+    <p>The app uses Google AdMob to show ads. While an ad is loading or being shown, AdMob can automatically collect:</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Data</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Advertising ID (a resettable, non-permanent device identifier)</td>
+            <td>Showing and, where permitted, personalizing ads</td>
+          </tr>
+          <tr>
+            <td>Device information (model, OS version, screen size, language)</td>
+            <td>Serving ads correctly sized and formatted for your device</td>
+          </tr>
+          <tr>
+            <td>Approximate location (derived from your IP address)</td>
+            <td>Serving regionally relevant ads and required compliance (e.g. EU/UK consent)</td>
+          </tr>
+          <tr>
+            <td>Ad interaction data (impressions, clicks, whether a rewarded video finished)</td>
+            <td>Measuring ad performance and unlocking rewarded-ad bonuses</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>All data AdMob collects travels over encrypted (HTTPS) connections. We don't operate our own servers that store this data — it lives in Google's own systems, governed by Google's privacy policy (linked in Section 6).</p>
+  </section>
+
+  <section id="local">
+    <h2>3. Data stored only on your device</h2>
+    <p>Everything about how you play — your <strong>score, coin and gem balances, unlocked themes, settings (music/sound/vibration/language), daily-streak progress, and current board state</strong> — is saved locally on your device only, using standard on-device storage. We do not run a game server, we do not have a database of player accounts, and none of this data is ever transmitted to us. If you uninstall the app or clear its storage, this data is gone for good — we have no copy of it anywhere.</p>
+  </section>
+
+  <section id="ads">
+    <h2>4. Advertising &amp; your choices</h2>
+    <p>GridCascade shows three kinds of ads through Google AdMob:</p>
+    <ul>
+      <li><strong>Banner ads</strong> — a small ad strip anchored to the bottom of the screen while you play.</li>
+      <li><strong>Interstitial ads</strong> — occasional full-screen ads shown between games.</li>
+      <li><strong>Rewarded video ads</strong> — optional ads you choose to watch yourself, in exchange for bonus coins, gems, or continuing a finished game.</li>
+    </ul>
+    <p>If you're in the <strong>EU or UK</strong>, the app shows a consent form the first time you open it, through Google's <strong>User Messaging Platform (UMP)</strong>, and will not show personalized ads until you respond. You can change your ad-consent choice later from the app's Settings.</p>
+    <p>On Android, you can reset your advertising ID or opt out of personalized ads at any time in <strong>Settings → Privacy → Ads</strong> — this is a device-level setting that applies to every app, not just GridCascade.</p>
+  </section>
+
+  <section id="purchases">
+    <h2>5. In-app purchases</h2>
+    <p><strong>GridCascade does not currently offer any real-money purchases.</strong> All in-game currency (coins and gems) is earned by playing or by watching optional rewarded ads — nothing in the app is bought with real money today. If we introduce real-money purchases in the future (for example, a "Remove Ads" option or currency packs), we will update this policy to describe exactly what payment and purchase-history data is involved before that feature goes live.</p>
+  </section>
+
+  <section id="third-party">
+    <h2>6. Third-party services</h2>
+    <p>GridCascade is built with <a href="https://capacitorjs.com" target="_blank" rel="noopener">Capacitor</a> and currently integrates one third-party service that can collect data, described above:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> (covers Google AdMob)</li>
+    </ul>
+    <p>The app also bundles the Firebase Analytics and RevenueCat SDKs for potential future use (basic gameplay analytics and purchase handling, respectively), but as of the date above <strong>neither is configured or actively collecting data</strong>. If that changes, this policy will be updated and the relevant provider's own privacy policy will be linked here.</p>
+  </section>
+
+  <section id="sharing">
+    <h2>7. Data sharing &amp; sale</h2>
+    <p>We do not sell your personal data, and we do not share it with anyone except Google AdMob as described above, strictly so it can serve ads — never for unrelated purposes.</p>
+  </section>
+
+  <section id="retention">
+    <h2>8. Data retention</h2>
+    <p>Gameplay progress (score, coins, gems, settings) is stored locally on your device and is removed if you uninstall the app or clear its data — we hold no copy. Data collected by AdMob is retained according to Google's own retention schedule, described in the privacy policy linked in Section 6.</p>
+  </section>
+
+  <section id="children">
+    <h2>9. Children's privacy</h2>
+    <p>GridCascade is offered to a general audience and is not directed primarily at children. We do not knowingly collect personal information from children in a manner not permitted by applicable law, and ads are not configured to specifically target children.</p>
+  </section>
+
+  <section id="rights">
+    <h2>10. Your rights &amp; choices</h2>
+    <p>Because GridCascade has no account system, there is no personal profile of you for us to access, correct, or delete on our end — your gameplay data lives only on your own device, under your own control (see Section 3). If you have a question about advertising data specifically, you can also exercise your choices directly with Google (Section 4) or reach out to us using the contact details below and we'll help however we can.</p>
+  </section>
+
+  <section id="security">
+    <h2>11. Data security</h2>
+    <p>We rely on the security practices of Google (AdMob), which uses encrypted connections and industry-standard safeguards. No method of transmission or storage is 100% secure, but we work only with an established provider that takes this seriously.</p>
+  </section>
+
+  <section id="changes">
+    <h2>12. Changes to this policy</h2>
+    <p>If we change what we collect or how we use it — including if we introduce real-money purchases or activate additional analytics — we'll update the "Last updated" date at the top of this page first. Significant changes will also be reflected in the app's Google Play store listing.</p>
+  </section>
+
+  <section id="contact">
+    <h2>13. Contact us</h2>
+    <div class="contact-card">
+      <p style="margin-bottom:10px;">Questions about this policy, or a data request? Reach us at:</p>
+      <p style="margin-bottom:0;"><code><a href="mailto:erakarsupport@gmail.com">erakarsupport@gmail.com</a></code></p>
+    </div>
+  </section>
+  </section>
+  <!-- ============================== /ENGLISH ============================== -->
+
+  <footer>
+    GridCascade — erakarstudio. This page is published as a standalone policy document for use in Google Play Console and in-app links.
+  </footer>
+</div>
+</body>
+</html>
